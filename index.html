@@ -21,24 +21,24 @@
         <h2>Produtos em destaque</h2>
         <ul class="products">
             <li class="product">
-                <p>Produto</p>
-                <img src="#" alt="Imagem do produto">
-                <p>Lorem ipsum dolor sit amet</p>
-                <span class="price">R$ 9,99</span>
+                <p>Mouse Logitech G Pro Gaming</p>
+                <img src="img/mouse.png" alt="Imagem do produto" width="100">
+                <p>Mouse gamer com várias funções</p>
+                <span class="price">R$ 79,85</span>
                 <a href="#"><button>Comprar</button></a>
             </li>
             <li class="product">
-                <p>Produto</p>
-                <img src="#" alt="Imagem do produto">
-                <p>Lorem ipsum dolor sit amet</p>
-                <span class="price">R$ 9,99</span>
+                <p>Teclado azul</p>
+                <img src="img/teclado.png" alt="Imagem do produto" width="100">
+                <p>Um teclado 60% para jogos</p>
+                <span class="price">R$ 119,99</span>
                 <a href="#"><button>Comprar</button></a>
             </li>
             <li class="product">
-                <p>Produto</p>
-                <img src="#" alt="Imagem do produto">
-                <p>Lorem ipsum dolor sit amet</p>
-                <span class="price">R$ 9,99</span>
+                <p>Unify B5 - Monitor Pequeno</p>
+                <img src="img/monitor.png" alt="Imagem do produto" width="100">
+                <p>Tela de computador de 15.6" HD</p>
+                <span class="price">R$ 933,89</span>
                 <a href="#"><button>Comprar</button></a>
             </li>
         </ul>
@@ -67,15 +67,48 @@
         <form action="POST">
             <label for="form_name">Nome:</label>
             <input type="text" name="name" id="form_name">
+            <br>
 
             <label for="form_mail">E-mail:</label>
             <input type="email" name="mail" id="form_mail">
+            <br>
 
             <label for="form_birth">Nascimento:</label>
             <input type="date" name="birth" id="form_birth">
+            <br>
             
-            <label for="form_birth">Estado civil:</label>
-            <option value=""></option>
+            <label for="form_social_state">Estado civil:</label>
+            <select name="social_state" id="form_social_state">
+                <option value="state_single">Solteiro(a)</option>
+                <option value="state_maried">Casado(a)</option>
+                <option value="state_divorced">Divorciado(a)</option>
+                <option value="state_maried_dead">Viúvo(a)</option>
+            </select>
+            <br>
+
+            <label for="form_genre">Gênero:</label>
+            <input type="radio" name="form_genre" id="form_genre_male">
+            <label for="form_genre_male">Masculino</label>
+            <input type="radio" name="form_genre" id="form_genre_female">
+            <label for="form_genre_female">Feminino</label>
+            <br>
+
+            <label for="form_interest_areas">Áreas de interesse:</label>
+            <input type="checkbox" name="form_interest_areas" id="games">
+            <label for="games">Jogos</label>
+            <input type="checkbox" name="form_interest_areas" id="office">
+            <label for="office">Escritório</label>
+            <input type="checkbox" name="form_interest_areas" id="edition">
+            <label for="edition">Edição</label>
+            <input type="checkbox" name="form_interest_areas" id="design">
+            <label for="design">Design</label>
+            <br>
+
+            <label for="form_description">Descrição:</label>
+            <textarea name="description" id="form_description"></textarea>
+            <br>
+
+            <input type="submit" value="Enviar">
         </form>
     </section>
 </body>
