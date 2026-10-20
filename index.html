@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Página inicial</title>
 </head>
 <body>
@@ -17,6 +18,7 @@
         </nav>
     </header>
 
+    <!-- Produtos em destaque -->
     <section id="featured">
         <h2>Produtos em destaque</h2>
         <ul class="products">
@@ -44,23 +46,25 @@
         </ul>
     </section>
 
+    <!-- Componentes do computador -->
     <section id="hardware">
         <h2>Componentes do computador</h2>
-        <dt>
-            <dl>Processador</dl>
+        <dl>
+            <dt>Processador</dt>
             <dd>O processador realiza os processamentos do computador, tratando de cálculos e atividades complexas.</dd>
 
-            <dl>Memória principal (RAM)</dl>
+            <dt>Memória principal (RAM)</dt>
             <dd>Ela armaneza os aplicativos e informações sendo utilizadas atualmente. É volátil, então é apagada quando o computador é desligado.</dd>
 
-            <dl>Memória secundária (armazenamento)</dl>
+            <dt>Memória secundária (armazenamento)</dt>
             <dd>Guarda as informações para uso futuro, não sendo apagada quando o computador é desligado. É nela que estão as pastas, os arquivos, aplicativos que não estão em execução etc.</dd>
 
-            <dl>Ventoinha</dl>
+            <dt>Ventoinha</dt>
             <dd>O computador esquenta muito e precisa de refrigeração. O papel da ventoinha é tirar o calor do computador de forma simples.</dd>
-        </dt>
+        </dl>
     </section>
 
+    <!-- Mais informações - formulário -->
     <section id="additional-info">
         <h2>Mais informações</h2>
 
@@ -73,7 +77,7 @@
             <input type="email" name="mail" id="form_mail">
             <br>
 
-            <label for="form_birth">Nascimento:</label>
+            <label for="form_birth">Data de nascimento:</label>
             <input type="date" name="birth" id="form_birth">
             <br>
             
